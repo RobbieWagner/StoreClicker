@@ -435,6 +435,8 @@ MonoBehaviour:
   currentClothingImage: {fileID: 2077651780}
   clothingImages:
   - {fileID: 7845222806384495754, guid: 47c74099476a0b542b121850434ddebe, type: 3}
+  - {fileID: 3462559413334080912, guid: 5a361e48de7483d46a007281b52441a0, type: 3}
+  - {fileID: 3876803008140154835, guid: 7cf2b24daf5ea264196a8237851ae79c, type: 3}
   clothingColors:
   - color: {r: 1, g: 1, b: 1, a: 1}
     colorName: White
@@ -442,6 +444,8 @@ MonoBehaviour:
     colorName: Black
   - color: {r: 0.49019608, g: 0.49019608, b: 0.49019608, a: 1}
     colorName: Gray
+  - color: {r: 0.3404414, g: 0.5145603, b: 0.6886792, a: 1}
+    colorName: Denim
   clothesText: {fileID: 749899385}
 --- !u!1 &749899383
 GameObject:
@@ -455,7 +459,7 @@ GameObject:
   - component: {fileID: 749899386}
   - component: {fileID: 749899385}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ClothesName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,7 +482,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749899385
 MonoBehaviour:
@@ -527,8 +531,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

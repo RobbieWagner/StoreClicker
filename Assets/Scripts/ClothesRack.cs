@@ -67,7 +67,9 @@ public class ClothesRack : MonoBehaviour
     {
         foreach(Image clothingImage in clothingImages)
         {
-            if(clothingImage.sprite.name.Equals(clothes.name)) return clothingImage.sprite;
+            Debug.Log(clothingImage.sprite.name);
+            Debug.Log(clothes.name);
+            if(clothingImage.sprite.name.Equals(clothes.type)) return clothingImage.sprite;
         }
         return clothingImages[0].sprite;
     }

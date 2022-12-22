@@ -14,6 +14,26 @@
             "type":"T-Shirt",
             "color":"Gray",
             "price":1.00
+        },
+        {
+            "type":"LongSleeveShirt",
+            "color":"White",
+            "price":5.00
+        },
+        {
+            "type":"LongSleeveShirt",
+            "color":"Black",
+            "price":3.00
+        },
+        {
+            "type":"LongSleeveShirt",
+            "color":"Gray",
+            "price":4.00
+        },
+        {
+            "type":"Pants",
+            "color":"Denim",
+            "price":10.00
         }
     ]
 }
