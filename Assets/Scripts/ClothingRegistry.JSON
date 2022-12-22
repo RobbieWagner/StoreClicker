@@ -2,8 +2,8 @@
     "clothingArticles": [
         {
             "type":"T-Shirt",
-            "color":"White",
-            "price":3.00
+            "color":"Gray",
+            "price":1.00
         },
         {
             "type":"T-Shirt",
@@ -12,28 +12,38 @@
         },
         {
             "type":"T-Shirt",
-            "color":"Gray",
-            "price":1.00
-        },
-        {
-            "type":"LongSleeveShirt",
             "color":"White",
-            "price":5.00
+            "price":3.00
         },
         {
+            "name":"Black Long Sleeve Shirt",
             "type":"LongSleeveShirt",
             "color":"Black",
             "price":3.00
         },
         {
+            "name":"Gray Long Sleeve Shirt",
             "type":"LongSleeveShirt",
             "color":"Gray",
             "price":4.00
         },
         {
+            "name":"White Long Sleeve Shirt",
+            "type":"LongSleeveShirt",
+            "color":"White",
+            "price":5.00
+        },
+        {
+            "name":"Jeans",
             "type":"Pants",
             "color":"Denim",
             "price":10.00
+        },
+        {
+            "name":"Dark Jeans",
+            "type":"Pants",
+            "color":"Black",
+            "price":15.00
         }
     ]
 }

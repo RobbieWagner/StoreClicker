@@ -30,7 +30,12 @@ public class ClothesRack : MonoBehaviour
 
     public TextAsset textJson;
     public ClothingRegistry clothesRack = new ClothingRegistry();
+    public ClothingRegistry clothesCatalog = new ClothingRegistry();
     private ClothingArticle currentClothingArticle;
+    [SerializeField] private ClickTracker clickTracker;
+    [HideInInspector] public int goalClicks;
+    [SerializeField] private TextMeshProUGUI goalText;
+    private int nextUnlockableItem;
     private int currentClothingArticleIndex;
 
     [SerializeField] private CurrencyTracker currencyTracker;
@@ -43,12 +48,18 @@ public class ClothesRack : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        clothesRack = JsonUtility.FromJson<ClothingRegistry>(textJson.text);
+        clothesCatalog = JsonUtility.FromJson<ClothingRegistry>(textJson.text);
+        nextUnlockableItem = 0;
+        goalClicks = 10;
+        UnlockGarment();
         NextClothingArticle();
+        goalText.text = "New item in " + goalClicks + " clicks!";
     }
 
     public void NextClothingArticle() 
     {
+        CheckForNewClothingItems();
+
         currentClothingArticleIndex = Random.Range(0, clothesRack.clothingArticles.Count);
         if(currentClothingArticle != null)
         {
@@ -63,12 +74,28 @@ public class ClothesRack : MonoBehaviour
         else clothesText.text = currentClothingArticle.name;
     }
 
+    private void CheckForNewClothingItems()
+    {
+        if(clickTracker.clicks >= goalClicks)
+        {
+            UnlockGarment();
+            goalClicks *= 10;
+            goalText.text = "New item in " + (goalClicks - clickTracker.clicks) + " clicks!";
+        }
+    }
+
+    private void UnlockGarment()
+    {
+        clothesRack.clothingArticles.Add(clothesCatalog.clothingArticles[nextUnlockableItem]);
+        nextUnlockableItem++;
+    }
+
     public Sprite FindClothesImage(ClothingArticle clothes)
     {
         foreach(Image clothingImage in clothingImages)
         {
-            Debug.Log(clothingImage.sprite.name);
-            Debug.Log(clothes.name);
+            //Debug.Log(clothingImage.sprite.name);
+            //Debug.Log(clothes.name);
             if(clothingImage.sprite.name.Equals(clothes.type)) return clothingImage.sprite;
         }
         return clothingImages[0].sprite;
