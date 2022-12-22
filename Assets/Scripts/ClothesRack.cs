@@ -45,6 +45,8 @@ public class ClothesRack : MonoBehaviour
     [SerializeField] private ClothingColor[] clothingColors;
     [SerializeField] private TextMeshProUGUI clothesText;
 
+    [HideInInspector] public float cashMultiplier;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -54,16 +56,20 @@ public class ClothesRack : MonoBehaviour
         UnlockGarment();
         NextClothingArticle();
         goalText.text = "New item in " + goalClicks + " clicks!";
+
+        cashMultiplier = 1;
     }
 
     public void NextClothingArticle() 
     {
         CheckForNewClothingItems();
+        goalText.text = "New item in " + (goalClicks - clickTracker.clicks) + " clicks!";
 
         currentClothingArticleIndex = Random.Range(0, clothesRack.clothingArticles.Count);
         if(currentClothingArticle != null)
         {
-            currencyTracker.money += currentClothingArticle.price;
+            currencyTracker.money += currentClothingArticle.price * cashMultiplier;
+            currencyTracker.money = (float) (System.Math.Round((double)currencyTracker.money, 2));
         }
         currentClothingArticle = clothesRack.clothingArticles[currentClothingArticleIndex];
         
@@ -80,7 +86,6 @@ public class ClothesRack : MonoBehaviour
         {
             UnlockGarment();
             goalClicks *= 10;
-            goalText.text = "New item in " + (goalClicks - clickTracker.clicks) + " clicks!";
         }
     }
 
