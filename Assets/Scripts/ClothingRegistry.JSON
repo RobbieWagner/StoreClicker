@@ -1,0 +1,19 @@
+{
+    "clothingArticles": [
+        {
+            "type":"T-Shirt",
+            "color":"White",
+            "price":3.00
+        },
+        {
+            "type":"T-Shirt",
+            "color":"Black",
+            "price":2.00
+        },
+        {
+            "type":"T-Shirt",
+            "color":"Gray",
+            "price":1.00
+        }
+    ]
+}
