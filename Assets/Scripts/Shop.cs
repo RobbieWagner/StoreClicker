@@ -10,11 +10,11 @@ public class Shop : MonoBehaviour
     [SerializeField] private List<GameObject> displayedItems;
     [SerializeField] List<ShopItem> shopItems;
 
-    [SerializeField] ClickTracker clickTracker;
+    public List<ClickTracker> clickTrackers;
 
     private void Start() 
     {
-
+        clickTrackers = new List<ClickTracker>();
     }
 
     public void CheckForNewPurchases()
@@ -23,7 +23,14 @@ public class Shop : MonoBehaviour
         {
             if(shopItem.requirement.requirementType.Equals("clicks"))
             {
-                if(shopItem.requirement.value <= clickTracker.clicks)
+                bool clickRequirementMet = false;
+                foreach(ClickTracker clickTracker in clickTrackers){
+                    if(shopItem.requirement.value <= clickTracker.clicks)
+                    {
+                        clickRequirementMet = true;
+                    }
+                }
+                if(clickRequirementMet)
                 {
                     GameObject newItem = Instantiate(shopItem.gameObject, gameObject.transform);
                     displayedItems.Add(newItem);
@@ -46,7 +53,6 @@ public class Shop : MonoBehaviour
     {
         for(int i = 0; i < displayedItems.Count; i++)
         {
-            float screenHeight = Screen.height;
             displayedItems[i].GetComponent<RectTransform>().anchoredPosition = new Vector2 (400, 400 - (i * 50));
         }
     }

@@ -281,11 +281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrades:
-  - cost: 1000
+  - cost: 100
     type: PantsSlot
     value: 0
   requirement:
     requirementType: clicks
-    value: 1000
+    value: 100
   currencyTracker: {fileID: 0}
-  clothesRack: {fileID: 0}
+  clickerHomeScreen: {fileID: 0}

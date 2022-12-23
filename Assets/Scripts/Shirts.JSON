@@ -32,18 +32,6 @@
             "type":"LongSleeveShirt",
             "color":"White",
             "price":5.00
-        },
-        {
-            "name":"Jeans",
-            "type":"Pants",
-            "color":"Denim",
-            "price":10.00
-        },
-        {
-            "name":"Dark Jeans",
-            "type":"Pants",
-            "color":"Black",
-            "price":15.00
         }
     ]
 }

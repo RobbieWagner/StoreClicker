@@ -1,0 +1,16 @@
+{
+    "clothingArticles": [
+        {
+            "name":"Jeans",
+            "type":"Pants",
+            "color":"Denim",
+            "price":10.00
+        },
+        {
+            "name":"Dark Jeans",
+            "type":"Pants",
+            "color":"Black",
+            "price":15.00
+        }
+    ]
+}

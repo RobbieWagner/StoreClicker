@@ -26,7 +26,8 @@ public class ShopItem : MonoBehaviour
     private Button button;
 
     public CurrencyTracker currencyTracker;
-    public ClothesRack clothesRack;
+
+    public ClickerHomeScreen clickerHomeScreen;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class ShopItem : MonoBehaviour
         button = gameObject.GetComponent<Button>();
 
         currencyTracker = GameObject.Find("CurrencyTracker").GetComponent<CurrencyTracker>();
-        clothesRack = GameObject.Find("ClothesRack").GetComponent<ClothesRack>();
+        clickerHomeScreen = GameObject.Find("ClickerScreen").GetComponent<ClickerHomeScreen>();
     }
     public void MakePurhcase()
     {
@@ -55,7 +56,16 @@ public class ShopItem : MonoBehaviour
     {
         if(upgrade.type.Equals("CashMultiplier"))
         {
-            clothesRack.cashMultiplier = upgrade.value;
+            foreach(GameObject rack in clickerHomeScreen.displayedRacks)
+            {
+                ClothesRack clothesRack = rack.GetComponent<ClothesRack>();
+
+                clothesRack.cashMultiplier = upgrade.value;
+            }
+        }
+        else if(upgrade.type.Equals("PantsSlot"))
+        {
+            clickerHomeScreen.slotsAvailable.Add("pants");
         }
     }
 }

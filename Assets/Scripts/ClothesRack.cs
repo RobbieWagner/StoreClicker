@@ -28,17 +28,18 @@ public class ClothesRack : MonoBehaviour
         public string colorName;
     }
 
+    public string requirementForClothesRack;
     public TextAsset textJson;
     public ClothingRegistry clothesRack = new ClothingRegistry();
     public ClothingRegistry clothesCatalog = new ClothingRegistry();
     private ClothingArticle currentClothingArticle;
-    [SerializeField] private ClickTracker clickTracker;
+    public ClickTracker clickTracker;
     [HideInInspector] public int goalClicks;
     [SerializeField] private TextMeshProUGUI goalText;
     private int nextUnlockableItem;
     private int currentClothingArticleIndex;
 
-    [SerializeField] private CurrencyTracker currencyTracker;
+    private CurrencyTracker currencyTracker;
 
     [SerializeField] private Image currentClothingImage;
     [SerializeField] private Image[] clothingImages;
@@ -50,6 +51,8 @@ public class ClothesRack : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        currencyTracker = GameObject.Find("CurrencyTracker").GetComponent<CurrencyTracker>();
+
         clothesCatalog = JsonUtility.FromJson<ClothingRegistry>(textJson.text);
         nextUnlockableItem = 0;
         goalClicks = 10;
