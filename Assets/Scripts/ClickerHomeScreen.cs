@@ -8,6 +8,7 @@ public class ClickerHomeScreen : MonoBehaviour
 {
     [SerializeField] List<GameObject> clothesRacksGO;
     [SerializeField] List<ClothesRack> clothesRacks;
+    List<ClothesRack> removedRacks;
     [HideInInspector] public List<GameObject> displayedRacks;
     [SerializeField] private Shop shop;
 
@@ -17,6 +18,7 @@ public class ClickerHomeScreen : MonoBehaviour
     {
         slotsAvailable = new List<string>();
         displayedRacks = new List<GameObject>();
+        removedRacks = new List<ClothesRack>();
         slotsAvailable.Add("shirts");
 
         DisplayRacks();
@@ -34,19 +36,17 @@ public class ClickerHomeScreen : MonoBehaviour
                     shop.clickTrackers.Add(newSlot.GetComponent<ClothesRack>().clickTracker);
                     displayedRacks.Add(newSlot);
                     clothesRacksGO.Remove(clothesRack.gameObject);
+                    removedRacks.Add(clothesRack);
                 }
             }
         }
 
-        foreach(GameObject rack in displayedRacks)
+
+        foreach(ClothesRack removedRack in removedRacks)
         {
-            ClothesRack removedRack = rack.GetComponent<ClothesRack>();
-            foreach(string slotName in slotsAvailable)
-            {
-            if(removedRack.requirementForClothesRack.Equals(slotName))
             clothesRacks.Remove(removedRack);
-            }
         }
+        
 
         ReformatClothingRacks();
     }
@@ -55,7 +55,7 @@ public class ClickerHomeScreen : MonoBehaviour
     {
         for(int i = 0; i < displayedRacks.Count; i++)
         {
-            displayedRacks[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(100 + 200 * i, 0);
+            displayedRacks[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(100 + 300 * i, 0);
         }
     }
 }

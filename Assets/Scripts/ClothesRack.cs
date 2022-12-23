@@ -85,7 +85,7 @@ public class ClothesRack : MonoBehaviour
 
     private void CheckForNewClothingItems()
     {
-        if(clickTracker.clicks >= goalClicks)
+        if(clickTracker.clicks >= goalClicks && nextUnlockableItem < clothesCatalog.clothingArticles.Count)
         {
             UnlockGarment();
             goalClicks *= 10;

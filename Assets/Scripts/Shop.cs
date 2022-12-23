@@ -9,12 +9,14 @@ public class Shop : MonoBehaviour
     [SerializeField] List<GameObject> shopItemsGO;
     [SerializeField] private List<GameObject> displayedItems;
     [SerializeField] List<ShopItem> shopItems;
+    List<ShopItem> removedShopItems;
 
     public List<ClickTracker> clickTrackers;
 
     private void Start() 
     {
         clickTrackers = new List<ClickTracker>();
+        removedShopItems = new List<ShopItem>();
     }
 
     public void CheckForNewPurchases()
@@ -34,16 +36,15 @@ public class Shop : MonoBehaviour
                 {
                     GameObject newItem = Instantiate(shopItem.gameObject, gameObject.transform);
                     displayedItems.Add(newItem);
+                    removedShopItems.Add(shopItem);
                     shopItemsGO.Remove(shopItem.gameObject);
                 }
             }
         }
 
-        foreach(GameObject item in displayedItems)
+        foreach(ShopItem removedShopItem in removedShopItems)
         {
-            ShopItem removedItem = item.GetComponent<ShopItem>();
-            if(shopItems.Contains(removedItem))
-            shopItems.Remove(removedItem);
+            shopItems.Remove(removedShopItem);
         }
 
         ReformatShopItems();
