@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Upgrade
+  m_text: AutoClick++
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6540975026430739815}
   - component: {fileID: 6540975026430739808}
   m_Layer: 5
-  m_Name: CashMultiplierUpgrade
+  m_Name: AutoClickUpgrade_Shirts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,17 +281,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrades:
-  - cost: 100
-    type: CashMultiplier
-    value: 1.1
-  - cost: 300
-    type: CashMultiplier
-    value: 1.2
-  - cost: 500
-    type: CashMultiplier
-    value: 1.25
+  - cost: 50
+    type: AutoClick
+    directedClothingSlot: shirts
+    value: 59
+  - cost: 200
+    type: AutoClick
+    directedClothingSlot: shirts
+    value: 55
+  - cost: 400
+    type: AutoClick
+    directedClothingSlot: shirts
+    value: 52
   requirement:
     requirementType: 
     value: 0
   currencyTracker: {fileID: 0}
-  clothesRack: {fileID: 0}
+  clickerHomeScreen: {fileID: 0}

@@ -76,6 +76,8 @@ MonoBehaviour:
     colorName: Denim
   clothesText: {fileID: 5213924515253363240}
   cashMultiplier: 0
+  timeToAutoClick: 0
+  name: pants
 --- !u!1001 &893096057754523349
 PrefabInstance:
   m_ObjectHideFlags: 0

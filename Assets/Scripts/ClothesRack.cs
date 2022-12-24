@@ -48,6 +48,10 @@ public class ClothesRack : MonoBehaviour
 
     [HideInInspector] public float cashMultiplier;
 
+    [HideInInspector] public float timeToAutoClick;
+
+    public string name;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -61,6 +65,9 @@ public class ClothesRack : MonoBehaviour
         goalText.text = "New item in " + goalClicks + " clicks!";
 
         cashMultiplier = 1;
+        timeToAutoClick = 60f;
+
+        StartCoroutine(AutoClick());
     }
 
     public void NextClothingArticle() 
@@ -116,5 +123,15 @@ public class ClothesRack : MonoBehaviour
             if(clothingColor.colorName.Equals(currentClothingArticle.color)) return clothingColor.color;
         }
         return Color.white;
+    }
+
+    private IEnumerator AutoClick()
+    {
+        Debug.Log("Waiting");
+        yield return new WaitForSeconds(timeToAutoClick);
+        Debug.Log("AutoClicked");
+        clickTracker.AddAClick();
+        NextClothingArticle();
+        StartCoroutine(AutoClick());
     }
 }

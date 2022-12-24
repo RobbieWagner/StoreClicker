@@ -10,6 +10,7 @@ public class ShopItem : MonoBehaviour
     {
         public float cost;
         public string type;
+        public string directedClothingSlot;
         public float value;
     }
 
@@ -59,8 +60,17 @@ public class ShopItem : MonoBehaviour
             foreach(GameObject rack in clickerHomeScreen.displayedRacks)
             {
                 ClothesRack clothesRack = rack.GetComponent<ClothesRack>();
-
+                if(upgrade.directedClothingSlot.Equals(clothesRack.name))
                 clothesRack.cashMultiplier = upgrade.value;
+            }
+        }
+        else if(upgrade.type.Equals("AutoClick"))
+        {
+            foreach(GameObject rack in clickerHomeScreen.displayedRacks)
+            {
+                ClothesRack clothesRack = rack.GetComponent<ClothesRack>();
+                if(upgrade.directedClothingSlot.Equals(clothesRack.name))
+                clothesRack.timeToAutoClick = upgrade.value;
             }
         }
         else if(upgrade.type.Equals("PantsSlot"))
