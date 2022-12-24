@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7017269920676971587
+--- !u!1 &6540975026376916535
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7017269920676971586}
-  - component: {fileID: 7017269920676971588}
-  - component: {fileID: 7017269920676971589}
+  - component: {fileID: 6540975026376916534}
+  - component: {fileID: 6540975026376916528}
+  - component: {fileID: 6540975026376916529}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -18,18 +18,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7017269920676971586
+--- !u!224 &6540975026376916534
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920676971587}
+  m_GameObject: {fileID: 6540975026376916535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7017269920727744272}
+  m_Father: {fileID: 6540975026430739812}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -37,21 +37,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7017269920676971588
+--- !u!222 &6540975026376916528
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920676971587}
+  m_GameObject: {fileID: 6540975026376916535}
   m_CullTransparentMesh: 1
---- !u!114 &7017269920676971589
+--- !u!114 &6540975026376916529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920676971587}
+  m_GameObject: {fileID: 6540975026376916535}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Pants Slot
+  m_text: Shirts Click +
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &7017269920727744273
+--- !u!1 &6540975026430739813
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,30 +142,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7017269920727744272}
-  - component: {fileID: 7017269920727744277}
-  - component: {fileID: 7017269920727744274}
-  - component: {fileID: 7017269920727744275}
-  - component: {fileID: 7017269920727744276}
+  - component: {fileID: 6540975026430739812}
+  - component: {fileID: 6540975026430739809}
+  - component: {fileID: 6540975026430739814}
+  - component: {fileID: 6540975026430739815}
+  - component: {fileID: 6540975026430739808}
   m_Layer: 5
-  m_Name: PantsSlotUpgrade
+  m_Name: AutoClickUpgrade_Shirts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7017269920727744272
+--- !u!224 &6540975026430739812
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920727744273}
+  m_GameObject: {fileID: 6540975026430739813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7017269920676971586}
+  - {fileID: 6540975026376916534}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -174,21 +174,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7017269920727744277
+--- !u!222 &6540975026430739809
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920727744273}
+  m_GameObject: {fileID: 6540975026430739813}
   m_CullTransparentMesh: 1
---- !u!114 &7017269920727744274
+--- !u!114 &6540975026430739814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920727744273}
+  m_GameObject: {fileID: 6540975026430739813}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -212,13 +212,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7017269920727744275
+--- !u!114 &6540975026430739815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920727744273}
+  m_GameObject: {fileID: 6540975026430739813}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -252,11 +252,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 7017269920727744274}
+  m_TargetGraphic: {fileID: 6540975026430739814}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7017269920727744276}
+      - m_Target: {fileID: 6540975026430739808}
         m_TargetAssemblyTypeName: ShopItem, Assembly-CSharp
         m_MethodName: MakePurhcase
         m_Mode: 1
@@ -268,22 +268,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7017269920727744276
+--- !u!114 &6540975026430739808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7017269920727744273}
+  m_GameObject: {fileID: 6540975026430739813}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57d0709c007cabe4c8ab0c3ee9657799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   upgrades:
-  - cost: 100
-    type: PantsSlot
-    value: 0
+  - cost: 50
+    type: AutoClick
+    directedClothingSlot: shirts
+    value: 59
+  - cost: 200
+    type: AutoClick
+    directedClothingSlot: shirts
+    value: 55
+  - cost: 400
+    type: AutoClick
+    directedClothingSlot: shirts
+    value: 52
   requirement:
     requirementType: clicks
     value: 100

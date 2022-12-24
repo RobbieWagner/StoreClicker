@@ -49,6 +49,7 @@ public class ClothesRack : MonoBehaviour
     [HideInInspector] public float cashMultiplier;
 
     [HideInInspector] public float timeToAutoClick;
+    [SerializeField] private Slider autoClickSlider;
 
     public string name;
 
@@ -128,7 +129,15 @@ public class ClothesRack : MonoBehaviour
     private IEnumerator AutoClick()
     {
         Debug.Log("Waiting");
-        yield return new WaitForSeconds(timeToAutoClick);
+        autoClickSlider.minValue = 0;
+        autoClickSlider.maxValue = timeToAutoClick;
+        autoClickSlider.value = 0;
+        yield return null;
+        while(autoClickSlider.value < autoClickSlider.maxValue)
+        {
+            yield return new WaitForSeconds(1f);
+            autoClickSlider.value++;
+        }
         Debug.Log("AutoClicked");
         clickTracker.AddAClick();
         NextClothingArticle();

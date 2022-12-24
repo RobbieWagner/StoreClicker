@@ -11,6 +11,8 @@ public class Shop : MonoBehaviour
     [SerializeField] List<ShopItem> shopItems;
     List<ShopItem> removedShopItems;
 
+    [SerializeField] ClickerHomeScreen clickerHomeScreen;
+
     public List<ClickTracker> clickTrackers;
 
     private void Start() 
@@ -33,9 +35,29 @@ public class Shop : MonoBehaviour
                 if(clicks > shopItem.requirement.value)
                 {
                     GameObject newItem = Instantiate(shopItem.gameObject, gameObject.transform);
-                    displayedItems.Add(newItem);
-                    removedShopItems.Add(shopItem);
-                    shopItemsGO.Remove(shopItem.gameObject);
+                    AddItemToShop(newItem, shopItem);
+                }
+            }
+            else if(shopItem.requirement.requirementType.Equals("slot"))
+            {
+                GameObject newItem = null;
+                string value = "";
+
+                if(shopItem.requirement.value == 1) value = "pants";
+                else if(shopItem.requirement.value == 2) value = "shoes";
+
+                foreach(GameObject rack in clickerHomeScreen.displayedRacks)
+                {
+                    ClothesRack cr = rack.GetComponent<ClothesRack>();
+                    if(cr.name.Equals(value))
+                    {
+                        newItem = shopItem.gameObject;
+                    }
+                }
+                if(newItem != null)
+                {
+                    newItem = Instantiate(newItem, gameObject.transform);
+                    AddItemToShop(newItem, shopItem);
                 }
             }
         }
@@ -46,6 +68,13 @@ public class Shop : MonoBehaviour
         }
 
         ReformatShopItems();
+    }
+
+    private void AddItemToShop(GameObject newItem, ShopItem shopItem)
+    {
+        displayedItems.Add(newItem);
+        removedShopItems.Add(shopItem);
+        shopItemsGO.Remove(shopItem.gameObject);
     }
 
     public void ReformatShopItems()

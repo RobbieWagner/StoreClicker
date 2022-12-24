@@ -1279,11 +1279,22 @@ MonoBehaviour:
   shopItemsGO:
   - {fileID: 7017269920727744273, guid: 29ad241647f61584da5f40193ba5fced, type: 3}
   - {fileID: 7017269920727744273, guid: dd2bf41f2437c9442bd7bf84b9fee858, type: 3}
+  - {fileID: 6540975026430739813, guid: d4e8b648f7d07c44280e394056b1df3a, type: 3}
+  - {fileID: 6540975026430739813, guid: e050bf203d06b5e4bb8b7a52ae6f98f2, type: 3}
+  - {fileID: 6540975026430739813, guid: 0a65b93a491abf54e81ec9f1a631f692, type: 3}
+  - {fileID: 6540975026430739813, guid: e5e8cbf32bdb6634298c8cb8833b482a, type: 3}
+  - {fileID: 6540975026430739813, guid: cc19d9cdd9481f24da0dfe7b91628fac, type: 3}
   displayedItems:
   - {fileID: 7017269920964247154}
   shopItems:
   - {fileID: 7017269920727744276, guid: 29ad241647f61584da5f40193ba5fced, type: 3}
   - {fileID: 7017269920727744276, guid: dd2bf41f2437c9442bd7bf84b9fee858, type: 3}
+  - {fileID: 6540975026430739808, guid: d4e8b648f7d07c44280e394056b1df3a, type: 3}
+  - {fileID: 6540975026430739808, guid: e050bf203d06b5e4bb8b7a52ae6f98f2, type: 3}
+  - {fileID: 6540975026430739808, guid: 0a65b93a491abf54e81ec9f1a631f692, type: 3}
+  - {fileID: 6540975026430739808, guid: e5e8cbf32bdb6634298c8cb8833b482a, type: 3}
+  - {fileID: 6540975026430739808, guid: cc19d9cdd9481f24da0dfe7b91628fac, type: 3}
+  clickerHomeScreen: {fileID: 1119131466}
   clickTrackers: []
 --- !u!1 &1739165350
 GameObject:
@@ -1608,7 +1619,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6540975026376916529, guid: e257786b98a5d224585671c12765a99d, type: 3}
       propertyPath: m_text
-      value: Cash Multiplier ++
+      value: $ Shirts +
       objectReference: {fileID: 0}
     - target: {fileID: 6540975026376916529, guid: e257786b98a5d224585671c12765a99d, type: 3}
       propertyPath: m_fontSize
@@ -1712,7 +1723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6540975026430739813, guid: e257786b98a5d224585671c12765a99d, type: 3}
       propertyPath: m_Name
-      value: CashMultiplierUpgrade
+      value: CashMultiplier_shirts
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e257786b98a5d224585671c12765a99d, type: 3}
