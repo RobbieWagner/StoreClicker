@@ -57,6 +57,8 @@ public class ClothesRack : MonoBehaviour
 
     public string name;
 
+    [SerializeField] CustomerLine customerLine;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -95,6 +97,8 @@ public class ClothesRack : MonoBehaviour
                 canClick = false;
                 StartCoroutine(PauseClicker());
             }
+
+            clickTracker.AddAClick();
             
             CheckForNewClothingItems();
 
@@ -111,6 +115,8 @@ public class ClothesRack : MonoBehaviour
             if(currentClothingArticle.name == null || currentClothingArticle.name.Equals("")) 
                 clothesText.text = currentClothingArticle.color + " " + currentClothingArticle.type;
             else clothesText.text = currentClothingArticle.name;
+
+            if(customerLine.linePresent) customerLine.RemoveAndAdd();
         }
     }
 
