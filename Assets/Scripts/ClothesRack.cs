@@ -35,7 +35,6 @@ public class ClothesRack : MonoBehaviour
     private ClothingArticle currentClothingArticle;
     public ClickTracker clickTracker;
     [HideInInspector] public int goalClicks;
-    [SerializeField] private TextMeshProUGUI goalText;
     private int nextUnlockableItem;
     private int currentClothingArticleIndex;
 
@@ -50,6 +49,11 @@ public class ClothesRack : MonoBehaviour
 
     [HideInInspector] public float timeToAutoClick;
     [SerializeField] private Slider autoClickSlider;
+    [SerializeField] private Slider goalClickSlider;
+    [SerializeField] private Slider clickSlider;
+
+    public float timeToNextClick;
+    private bool canClick;
 
     public string name;
 
@@ -60,10 +64,21 @@ public class ClothesRack : MonoBehaviour
 
         clothesCatalog = JsonUtility.FromJson<ClothingRegistry>(textJson.text);
         nextUnlockableItem = 0;
+
         goalClicks = 10;
+        goalClickSlider.minValue = 0;
+        goalClickSlider.maxValue = goalClicks;
+        goalClickSlider.value = 0;
+
+        timeToNextClick = 1f;
+        clickSlider.minValue = 0;
+        clickSlider.maxValue = timeToNextClick;
+        clickSlider.value = 0;
+
+        canClick = true;
+
         UnlockGarment();
-        NextClothingArticle();
-        goalText.text = "New item in " + goalClicks + " clicks!";
+        NextClothingArticle(true);
 
         cashMultiplier = 1;
         timeToAutoClick = 60f;
@@ -71,24 +86,32 @@ public class ClothesRack : MonoBehaviour
         StartCoroutine(AutoClick());
     }
 
-    public void NextClothingArticle() 
+    public void NextClothingArticle(bool isAutoClick) 
     {
-        CheckForNewClothingItems();
-        goalText.text = "New item in " + (goalClicks - clickTracker.clicks) + " clicks!";
-
-        currentClothingArticleIndex = Random.Range(0, clothesRack.clothingArticles.Count);
-        if(currentClothingArticle != null)
+        if(canClick || isAutoClick)
         {
-            currencyTracker.money += currentClothingArticle.price * cashMultiplier;
-            currencyTracker.money = (float) (System.Math.Round((double)currencyTracker.money, 2));
+            if(!isAutoClick)
+            { 
+                canClick = false;
+                StartCoroutine(PauseClicker());
+            }
+            
+            CheckForNewClothingItems();
+
+            currentClothingArticleIndex = Random.Range(0, clothesRack.clothingArticles.Count);
+            if(currentClothingArticle != null)
+            {
+                currencyTracker.money += currentClothingArticle.price * cashMultiplier;
+                currencyTracker.money = (float) (System.Math.Round((double)currencyTracker.money, 2));
+            }
+            currentClothingArticle = clothesRack.clothingArticles[currentClothingArticleIndex];
+            
+            currentClothingImage.sprite = FindClothesImage(currentClothingArticle);
+            currentClothingImage.color = FindClothesColor(currentClothingArticle);
+            if(currentClothingArticle.name == null || currentClothingArticle.name.Equals("")) 
+                clothesText.text = currentClothingArticle.color + " " + currentClothingArticle.type;
+            else clothesText.text = currentClothingArticle.name;
         }
-        currentClothingArticle = clothesRack.clothingArticles[currentClothingArticleIndex];
-        
-        currentClothingImage.sprite = FindClothesImage(currentClothingArticle);
-        currentClothingImage.color = FindClothesColor(currentClothingArticle);
-        if(currentClothingArticle.name == null || currentClothingArticle.name.Equals("")) 
-            clothesText.text = currentClothingArticle.color + " " + currentClothingArticle.type;
-        else clothesText.text = currentClothingArticle.name;
     }
 
     private void CheckForNewClothingItems()
@@ -126,6 +149,12 @@ public class ClothesRack : MonoBehaviour
         return Color.white;
     }
 
+    public void AddClickToGoal()
+    {
+        goalClickSlider.value = clickTracker.clicks;
+        goalClickSlider.maxValue = goalClicks;
+    }
+
     private IEnumerator AutoClick()
     {
         Debug.Log("Waiting");
@@ -140,7 +169,20 @@ public class ClothesRack : MonoBehaviour
         }
         Debug.Log("AutoClicked");
         clickTracker.AddAClick();
-        NextClothingArticle();
+        NextClothingArticle(true);
         StartCoroutine(AutoClick());
+    }
+
+    private IEnumerator PauseClicker()
+    {
+        canClick = false;
+        while(clickSlider.value < clickSlider.maxValue)
+        {
+            yield return new WaitForSeconds(.01f);
+            clickSlider.value += .01f;
+        }
+        clickSlider.value = 0;
+        canClick = true;
+        StopCoroutine(PauseClicker());
     }
 }

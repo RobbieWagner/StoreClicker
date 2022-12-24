@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4425997125365181030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: name
+      value: shirts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: textJson
+      value: 
+      objectReference: {fileID: 4900000, guid: e4dcfe314ae83914ca050a3d46e56983, type: 3}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingImages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: requirementForClothesRack
+      value: shirts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 7845222806384495754, guid: 47c74099476a0b542b121850434ddebe, type: 3}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 3462559413334080912, guid: 5a361e48de7483d46a007281b52441a0, type: 3}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[0].color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[0].color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[0].color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[1].color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[2].color.b
+      value: 0.49019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[2].color.g
+      value: 0.49019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[2].color.r
+      value: 0.49019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[0].colorName
+      value: White
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[1].colorName
+      value: Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: clothingColors.Array.data[2].colorName
+      value: Gray
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808092832067320534, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357718011402401155, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367117801438889985, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140622603212883608, guid: f216590b4fd023d49823644aa31a933e, type: 3}
+      propertyPath: m_Name
+      value: ClothesRack_shirts
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f216590b4fd023d49823644aa31a933e, type: 3}

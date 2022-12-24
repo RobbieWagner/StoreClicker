@@ -875,13 +875,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothesRacksGO:
-  - {fileID: 481121506746438350, guid: bd47308ace130b84188f7d12299c06e4, type: 3}
-  - {fileID: 5213924515156476018, guid: 6f3e9ec2804da7649b2f15897c02090b, type: 3}
-  - {fileID: 5213924515156476018, guid: 4d470ca05e1c40e4b9f2dc28f75e40e3, type: 3}
+  - {fileID: 4879174363676650750, guid: b324d13f5c540dd4fb4ab421010d567a, type: 3}
+  - {fileID: 7621610769018473080, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+  - {fileID: 9140622603212883608, guid: f216590b4fd023d49823644aa31a933e, type: 3}
   clothesRacks:
-  - {fileID: 481121506746438344, guid: bd47308ace130b84188f7d12299c06e4, type: 3}
-  - {fileID: 2828272737889606113, guid: 6f3e9ec2804da7649b2f15897c02090b, type: 3}
-  - {fileID: 2828272737889606113, guid: 4d470ca05e1c40e4b9f2dc28f75e40e3, type: 3}
+  - {fileID: 3219458637184185709, guid: b324d13f5c540dd4fb4ab421010d567a, type: 3}
+  - {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+  - {fileID: 1279475830709788427, guid: f216590b4fd023d49823644aa31a933e, type: 3}
   displayedRacks: []
   shop: {fileID: 1548810839}
   slotsAvailable: []
@@ -1135,14 +1135,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b0afa1019e411594ba1271780b1060c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
