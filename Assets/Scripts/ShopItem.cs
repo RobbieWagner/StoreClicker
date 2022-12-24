@@ -67,5 +67,9 @@ public class ShopItem : MonoBehaviour
         {
             clickerHomeScreen.slotsAvailable.Add("pants");
         }
+        else if(upgrade.type.Equals("ShoesSlot"))
+        {
+            clickerHomeScreen.slotsAvailable.Add("shoes");
+        }
     }
 }

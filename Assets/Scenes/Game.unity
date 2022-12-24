@@ -877,9 +877,11 @@ MonoBehaviour:
   clothesRacksGO:
   - {fileID: 481121506746438350, guid: bd47308ace130b84188f7d12299c06e4, type: 3}
   - {fileID: 5213924515156476018, guid: 6f3e9ec2804da7649b2f15897c02090b, type: 3}
+  - {fileID: 5213924515156476018, guid: 4d470ca05e1c40e4b9f2dc28f75e40e3, type: 3}
   clothesRacks:
   - {fileID: 481121506746438344, guid: bd47308ace130b84188f7d12299c06e4, type: 3}
   - {fileID: 2828272737889606113, guid: 6f3e9ec2804da7649b2f15897c02090b, type: 3}
+  - {fileID: 2828272737889606113, guid: 4d470ca05e1c40e4b9f2dc28f75e40e3, type: 3}
   displayedRacks: []
   shop: {fileID: 1548810839}
   slotsAvailable: []
@@ -1276,10 +1278,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopItemsGO:
   - {fileID: 7017269920727744273, guid: 29ad241647f61584da5f40193ba5fced, type: 3}
+  - {fileID: 7017269920727744273, guid: dd2bf41f2437c9442bd7bf84b9fee858, type: 3}
   displayedItems:
   - {fileID: 7017269920964247154}
   shopItems:
   - {fileID: 7017269920727744276, guid: 29ad241647f61584da5f40193ba5fced, type: 3}
+  - {fileID: 7017269920727744276, guid: dd2bf41f2437c9442bd7bf84b9fee858, type: 3}
   clickTrackers: []
 --- !u!1 &1739165350
 GameObject:

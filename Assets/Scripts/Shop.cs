@@ -25,14 +25,12 @@ public class Shop : MonoBehaviour
         {
             if(shopItem.requirement.requirementType.Equals("clicks"))
             {
-                bool clickRequirementMet = false;
+                int clicks = 0;
                 foreach(ClickTracker clickTracker in clickTrackers){
-                    if(shopItem.requirement.value <= clickTracker.clicks)
-                    {
-                        clickRequirementMet = true;
-                    }
+                    clicks += clickTracker.clicks;
                 }
-                if(clickRequirementMet)
+
+                if(clicks > shopItem.requirement.value)
                 {
                     GameObject newItem = Instantiate(shopItem.gameObject, gameObject.transform);
                     displayedItems.Add(newItem);

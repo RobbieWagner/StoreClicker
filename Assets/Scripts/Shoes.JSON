@@ -1,0 +1,22 @@
+{
+    "clothingArticles": [
+        {
+            "name":"Red Tennis Shoes",
+            "type":"Shoes",
+            "color":"Red",
+            "price":30.00
+        },
+        {
+            "name":"Blue Tennis Shoes",
+            "type":"Shoes",
+            "color":"Blue",
+            "price":40.00
+        },
+        {
+            "name":"Yellow Tennis Shoes",
+            "type":"Shoes",
+            "color":"Red",
+            "price":55.00
+        }
+    ]
+}
