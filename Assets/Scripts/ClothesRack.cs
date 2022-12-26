@@ -38,6 +38,7 @@ public class ClothesRack : MonoBehaviour
     private int nextUnlockableItem;
     private int currentClothingArticleIndex;
 
+    [SerializeField] private AudioSource registerSound;
     private CurrencyTracker currencyTracker;
 
     [SerializeField] private Image currentClothingImage;
@@ -94,6 +95,7 @@ public class ClothesRack : MonoBehaviour
             if(!isAutoClick)
             { 
                 canClick = false;
+                registerSound.Play();
                 StartCoroutine(PauseClicker());
             }
 
