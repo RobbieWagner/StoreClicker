@@ -164,10 +164,10 @@ public class ClothesRack : MonoBehaviour
 
     private IEnumerator AutoClick()
     {
-        Debug.Log("Waiting");
+        //Debug.Log("Waiting");
         autoClickSlider.minValue = 0;
         autoClickSlider.maxValue = timeToAutoClick;
-        Debug.Log(timeToAutoClick);
+        //Debug.Log(timeToAutoClick);
         autoClickSlider.value = 0;
         yield return null;
         while(autoClickSlider.value < autoClickSlider.maxValue)
@@ -175,7 +175,7 @@ public class ClothesRack : MonoBehaviour
             yield return new WaitForSeconds(1f);
             autoClickSlider.value++;
         }
-        Debug.Log("AutoClicked");
+        //Debug.Log("AutoClicked");
         clickTracker.AddAClick();
         NextClothingArticle(true);
         StartCoroutine(AutoClick());

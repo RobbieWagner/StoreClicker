@@ -7,7 +7,7 @@ public class Shop : MonoBehaviour
 {
 
     [SerializeField] List<GameObject> shopItemsGO;
-    [SerializeField] private List<GameObject> displayedItems;
+    public List<GameObject> displayedItems;
     [SerializeField] List<ShopItem> shopItems;
     List<ShopItem> removedShopItems;
 

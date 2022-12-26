@@ -22,13 +22,15 @@ public class ShopItem : MonoBehaviour
     }
 
     public Upgrade[] upgrades;
-    private int currentUpgrade;
+    [SerializeField] private int currentUpgrade;
     public shopRequirement requirement;
     private Button button;
 
     public CurrencyTracker currencyTracker;
 
     public ClickerHomeScreen clickerHomeScreen;
+
+    [SerializeField] private Shop shop;
 
     private void Start()
     {
@@ -37,6 +39,8 @@ public class ShopItem : MonoBehaviour
 
         currencyTracker = GameObject.Find("CurrencyTracker").GetComponent<CurrencyTracker>();
         clickerHomeScreen = GameObject.Find("ClickerScreen").GetComponent<ClickerHomeScreen>();
+
+        shop = GameObject.Find("UpgradesScreen").GetComponent<Shop>();
     }
     public void MakePurhcase()
     {
@@ -48,7 +52,9 @@ public class ShopItem : MonoBehaviour
             currentUpgrade++;
             if(currentUpgrade == upgrades.Length)
             {
-                button.enabled = false;
+                shop.displayedItems.Remove(gameObject);
+                Destroy(gameObject);
+                shop.ReformatShopItems();
             }
         }
     }
