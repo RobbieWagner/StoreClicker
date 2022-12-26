@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrades:
-  - cost: 9
+  - cost: 900
     type: ShoesSlot
     directedClothingSlot: 
     value: 0
