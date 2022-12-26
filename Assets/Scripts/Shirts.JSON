@@ -3,35 +3,35 @@
         {
             "type":"T-Shirt",
             "color":"Gray",
-            "price":1.00
+            "price":4.00
         },
         {
             "type":"T-Shirt",
             "color":"Black",
-            "price":2.00
+            "price":5.00
         },
         {
             "type":"T-Shirt",
             "color":"White",
-            "price":3.00
+            "price":5.00
         },
         {
             "name":"Black Long Sleeve Shirt",
             "type":"LongSleeveShirt",
             "color":"Black",
-            "price":3.00
+            "price":10.00
         },
         {
             "name":"Gray Long Sleeve Shirt",
             "type":"LongSleeveShirt",
             "color":"Gray",
-            "price":4.00
+            "price":11.00
         },
         {
             "name":"White Long Sleeve Shirt",
             "type":"LongSleeveShirt",
             "color":"White",
-            "price":5.00
+            "price":15.00
         }
     ]
 }

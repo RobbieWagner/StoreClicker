@@ -64,6 +64,15 @@ public class ShopItem : MonoBehaviour
                 clothesRack.cashMultiplier = upgrade.value;
             }
         }
+        else if(upgrade.type.Equals("Click"))
+        {
+            foreach(GameObject rack in clickerHomeScreen.displayedRacks)
+            {
+                ClothesRack clothesRack = rack.GetComponent<ClothesRack>();
+                if(upgrade.directedClothingSlot.Equals(clothesRack.name))
+                clothesRack.timeToNextClick *= upgrade.value;
+            }
+        }
         else if(upgrade.type.Equals("AutoClick"))
         {
             foreach(GameObject rack in clickerHomeScreen.displayedRacks)

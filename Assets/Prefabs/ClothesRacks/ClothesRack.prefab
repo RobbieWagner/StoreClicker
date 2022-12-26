@@ -1093,11 +1093,11 @@ MonoBehaviour:
     colorName: Denim
   clothesText: {fileID: 5213924515253363240}
   cashMultiplier: 0
-  timeToAutoClick: 0
+  timeToAutoClick: 100
   autoClickSlider: {fileID: 4799591606125628143}
   goalClickSlider: {fileID: 6479017640632564041}
   clickSlider: {fileID: 628371403707639333}
-  timeToNextClick: 0
+  timeToNextClick: 1
   name: pants
   customerLine: {fileID: 6310472394410859102}
 --- !u!1 &6469240301037765129

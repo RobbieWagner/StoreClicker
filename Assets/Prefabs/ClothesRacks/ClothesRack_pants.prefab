@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188669048617642758, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270700923125794223, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864649312933594573, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1601552377664336745, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -96,6 +108,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4900000, guid: 5ffbd48a09097bf41904a3c41c750e8e, type: 3}
     - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: timeToAutoClick
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: timeToNextClick
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: clothingColors.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -164,6 +184,10 @@ PrefabInstance:
       value: Gray
       objectReference: {fileID: 0}
     - target: {fileID: 3428987218494897212, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938544407162093003, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}

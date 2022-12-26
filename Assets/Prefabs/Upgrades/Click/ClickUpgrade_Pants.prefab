@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pants Auto Click +
+  m_text: Pants Click +
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6540975026430739815}
   - component: {fileID: 6540975026430739808}
   m_Layer: 5
-  m_Name: AutoClickUpgrade_Pants
+  m_Name: ClickUpgrade_Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,17 +282,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgrades:
   - cost: 500
-    type: AutoClick
+    type: Click
     directedClothingSlot: pants
-    value: 14
+    value: 0.9
   - cost: 2000
-    type: AutoClick
+    type: Click
     directedClothingSlot: pants
-    value: 13
+    value: 0.9
   - cost: 4000
-    type: AutoClick
+    type: Click
     directedClothingSlot: pants
-    value: 12.5
+    value: 0.9
   requirement:
     requirementType: slot
     value: 1

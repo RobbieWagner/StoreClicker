@@ -16,6 +16,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4900000, guid: 3d2f08257ddc1f84da27f1ed31df1bc2, type: 3}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: timeToAutoClick
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: timeToNextClick
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.size
       value: 3
       objectReference: {fileID: 0}

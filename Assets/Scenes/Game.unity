@@ -1284,6 +1284,9 @@ MonoBehaviour:
   - {fileID: 6540975026430739813, guid: 0a65b93a491abf54e81ec9f1a631f692, type: 3}
   - {fileID: 6540975026430739813, guid: e5e8cbf32bdb6634298c8cb8833b482a, type: 3}
   - {fileID: 6540975026430739813, guid: cc19d9cdd9481f24da0dfe7b91628fac, type: 3}
+  - {fileID: 6540975026430739813, guid: 8592e1687599a44468236e543e62bad0, type: 3}
+  - {fileID: 6540975026430739813, guid: 748c806e3578ab948927feb88ed19bc3, type: 3}
+  - {fileID: 6540975026430739813, guid: c6f08ba2cea9b8043bf484898f1d15eb, type: 3}
   displayedItems:
   - {fileID: 7017269920964247154}
   shopItems:
@@ -1294,6 +1297,9 @@ MonoBehaviour:
   - {fileID: 6540975026430739808, guid: 0a65b93a491abf54e81ec9f1a631f692, type: 3}
   - {fileID: 6540975026430739808, guid: e5e8cbf32bdb6634298c8cb8833b482a, type: 3}
   - {fileID: 6540975026430739808, guid: cc19d9cdd9481f24da0dfe7b91628fac, type: 3}
+  - {fileID: 6540975026430739808, guid: 8592e1687599a44468236e543e62bad0, type: 3}
+  - {fileID: 6540975026430739808, guid: 748c806e3578ab948927feb88ed19bc3, type: 3}
+  - {fileID: 6540975026430739808, guid: c6f08ba2cea9b8043bf484898f1d15eb, type: 3}
   clickerHomeScreen: {fileID: 1119131466}
   clickTrackers: []
 --- !u!1 &1739165350

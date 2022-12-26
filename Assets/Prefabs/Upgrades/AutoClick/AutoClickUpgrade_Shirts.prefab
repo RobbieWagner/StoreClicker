@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shirts Click +
+  m_text: Shirts Auto Click +
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -284,17 +284,17 @@ MonoBehaviour:
   - cost: 50
     type: AutoClick
     directedClothingSlot: shirts
-    value: 59
+    value: 9
   - cost: 200
     type: AutoClick
     directedClothingSlot: shirts
-    value: 55
+    value: 7.5
   - cost: 400
     type: AutoClick
     directedClothingSlot: shirts
-    value: 52
+    value: 6.5
   requirement:
     requirementType: clicks
-    value: 100
+    value: 50
   currencyTracker: {fileID: 0}
   clickerHomeScreen: {fileID: 0}
