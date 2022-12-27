@@ -18,6 +18,7 @@
             "price":20.00
         },
         {
+            "name":"Black Skirt",
             "type":"Skirt",
             "color":"Black",
             "price":25.00

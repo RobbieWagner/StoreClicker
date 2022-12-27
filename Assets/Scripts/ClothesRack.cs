@@ -128,7 +128,10 @@ public class ClothesRack : MonoBehaviour
         if(clickTracker.clicks >= goalClicks && nextUnlockableItem < clothesCatalog.clothingArticles.Count)
         {
             UnlockGarment();
-            goalClicks *= 10;
+
+            if(goalClicks < 250) goalClicks *= 5;
+            else goalClicks *= 2;
+            
             foreach(Mannequin mannequin in clickerScreen.mannequins) mannequin.UpdateMannequins();
         }
     }
