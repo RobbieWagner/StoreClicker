@@ -190,6 +190,8 @@ public class ClothesRack : MonoBehaviour
     private IEnumerator PauseClicker()
     {
         canClick = false;
+        clickSlider.maxValue = timeToNextClick;
+
         while(clickSlider.value < clickSlider.maxValue)
         {
             yield return new WaitForSeconds(.01f);

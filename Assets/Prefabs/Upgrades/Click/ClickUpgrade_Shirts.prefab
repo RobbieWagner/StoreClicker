@@ -284,17 +284,19 @@ MonoBehaviour:
   - cost: 50
     type: Click
     directedClothingSlot: shirts
-    value: 0.9
+    value: 0.5
   - cost: 200
     type: Click
     directedClothingSlot: shirts
-    value: 0.9
-  - cost: 400
+    value: 0.5
+  - cost: 1000
     type: Click
     directedClothingSlot: shirts
-    value: 0.9
+    value: 0
+  currentUpgrade: 0
   requirement:
     requirementType: clicks
-    value: 100
+    value: 10
   currencyTracker: {fileID: 0}
   clickerHomeScreen: {fileID: 0}
+  shop: {fileID: 0}

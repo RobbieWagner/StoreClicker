@@ -11,12 +11,10 @@ public class CustomerLine : MonoBehaviour
     [HideInInspector] public bool linePresent = false;
     [SerializeField] private ClothesRack clothesRack;
 
-    private bool moveCustomerRunning;
+    private bool movingCustomer;
     // Start is called before the first frame update
     void Start()
     {
-        moveCustomerRunning = false;
-        
         for(int i = 0; i < customerCount; i++)
         {
             AddNewCustomer();
@@ -55,25 +53,28 @@ public class CustomerLine : MonoBehaviour
 
     public IEnumerator MoveCustomer()
     {
-        if(!moveCustomerRunning)
-        {
-            moveCustomerRunning = true;
-            float timeWaited = 0;
-            RectTransform customerTransform = customers[0].GetComponent<RectTransform>();
-            Image customerImage = customers[0].GetComponent<Image>();
-            while(timeWaited < clothesRack.timeToNextClick)
-            {
-                yield return new WaitForSeconds(.001f);
-                timeWaited += .001f;
-                if(customerTransform != null) customerTransform.anchoredPosition += new Vector2(.2f, 0f);
-                if(customerImage != null) customerImage.color = new Color(customerImage.color.r, customerImage.color.g, customerImage.color.b, customerImage.color.a - .001f);
-            }
-            moveCustomerRunning = false;
-        }
-        Destroy(customers[0]);
+        GameObject leavingCustomer = customers[0];
         customers.RemoveAt(0);
-
         AddNewCustomer();
+
+        float timeWaited = 0;
+        RectTransform customerTransform = leavingCustomer.GetComponent<RectTransform>();
+        Image customerImage = leavingCustomer.GetComponent<Image>();
+        if(movingCustomer)
+        {
+            movingCustomer = false;
+            yield return new WaitForSeconds(.01f);
+        }
+        movingCustomer = true;
+        while(movingCustomer && timeWaited < clothesRack.timeToNextClick)
+        {
+            yield return new WaitForSeconds(.001f);
+            timeWaited += .001f;
+            if(customerTransform != null) customerTransform.anchoredPosition += new Vector2(.2f, 0f);
+            if(customerImage != null) customerImage.color = new Color(customerImage.color.r, customerImage.color.g, customerImage.color.b, customerImage.color.a - .001f);
+        }
+        movingCustomer = false;
+        Destroy(leavingCustomer);
 
         //StopCoroutine(MoveCustomer());
     }
