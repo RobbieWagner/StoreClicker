@@ -1,6 +1,7 @@
 {
     "clothingArticles": [
         {
+            "name": "Gray T-Shirt",
             "type":"T-Shirt",
             "color":"Gray",
             "price":4.00

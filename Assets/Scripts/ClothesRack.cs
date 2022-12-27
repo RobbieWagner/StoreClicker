@@ -28,6 +28,7 @@ public class ClothesRack : MonoBehaviour
         public string colorName;
     }
 
+    private ClickerHomeScreen clickerScreen;
     public string requirementForClothesRack;
     public TextAsset textJson;
     public ClothingRegistry clothesRack = new ClothingRegistry();
@@ -63,6 +64,7 @@ public class ClothesRack : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        clickerScreen = GameObject.Find("ClickerScreen").GetComponent<ClickerHomeScreen>();
         currencyTracker = GameObject.Find("CurrencyTracker").GetComponent<CurrencyTracker>();
 
         clothesCatalog = JsonUtility.FromJson<ClothingRegistry>(textJson.text);
@@ -127,6 +129,7 @@ public class ClothesRack : MonoBehaviour
         {
             UnlockGarment();
             goalClicks *= 10;
+            foreach(Mannequin mannequin in clickerScreen.mannequins) mannequin.UpdateMannequins();
         }
     }
 

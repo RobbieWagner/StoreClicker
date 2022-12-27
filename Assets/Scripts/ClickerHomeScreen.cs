@@ -12,6 +12,8 @@ public class ClickerHomeScreen : MonoBehaviour
     [HideInInspector] public List<GameObject> displayedRacks;
     [SerializeField] private Shop shop;
 
+    public List<Mannequin> mannequins;
+
     public List<string> slotsAvailable;
 
     private void Start() 
