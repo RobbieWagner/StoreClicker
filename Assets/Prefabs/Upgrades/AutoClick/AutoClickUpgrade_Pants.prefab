@@ -285,16 +285,18 @@ MonoBehaviour:
     type: AutoClick
     directedClothingSlot: pants
     value: 14
-  - cost: 2000
+  - cost: 1000
     type: AutoClick
     directedClothingSlot: pants
     value: 13
-  - cost: 4000
+  - cost: 2000
     type: AutoClick
     directedClothingSlot: pants
     value: 12.5
+  currentUpgrade: 0
   requirement:
     requirementType: slot
     value: 1
   currencyTracker: {fileID: 0}
   clickerHomeScreen: {fileID: 0}
+  shop: {fileID: 0}

@@ -17,6 +17,11 @@
             "type":"Shoes",
             "color":"Yellow",
             "price":55.00
+        },
+        {
+            "type":"Boots",
+            "color":"Black",
+            "price":60.00
         }
     ]
 }

@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: requirementForClothesRack
@@ -35,6 +35,10 @@ PrefabInstance:
       propertyPath: clothingImages.Array.data[0]
       value: 
       objectReference: {fileID: 3314748789893118379, guid: 6dd91b863379cd646afd606de4316e2e, type: 3}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 3155681474758821634, guid: 9989b53fe8d5c894eba0a4d654cfe8d4, type: 3}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.data[0].color.b
       value: 0
@@ -72,6 +76,18 @@ PrefabInstance:
       value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[3].color.b
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[3].color.g
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[3].color.r
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.data[0].colorName
       value: Red
       objectReference: {fileID: 0}
@@ -82,6 +98,10 @@ PrefabInstance:
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.data[2].colorName
       value: Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[3].colorName
+      value: Black
       objectReference: {fileID: 0}
     - target: {fileID: 1011277541887391286, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: m_AnchorMax.y

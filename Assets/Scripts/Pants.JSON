@@ -11,6 +11,16 @@
             "type":"Pants",
             "color":"Black",
             "price":15.00
+        },
+        {
+            "type":"Skirt",
+            "color":"White",
+            "price":20.00
+        },
+        {
+            "type":"Skirt",
+            "color":"Black",
+            "price":25.00
         }
     ]
 }
