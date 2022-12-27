@@ -195,9 +195,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClothesRack_pants
       objectReference: {fileID: 0}
+    - target: {fileID: 6310472394410859102, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: clothesRack
+      value: 
+      objectReference: {fileID: 495107011494401003}
     - target: {fileID: 9005583353013047019, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+--- !u!114 &495107011494401003 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+  m_PrefabInstance: {fileID: 2422639893860125194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee5d06e5de55fd49bae8675b0946ab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

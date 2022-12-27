@@ -1644,6 +1644,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1317021562498722441, guid: f35b8ec8d3ee38d4a93046be461f0c5f, type: 3}
+      propertyPath: clothesRack
+      value: 
+      objectReference: {fileID: 2828272737889606113}
     - target: {fileID: 1317021562498722443, guid: f35b8ec8d3ee38d4a93046be461f0c5f, type: 3}
       propertyPath: m_Name
       value: Customers
