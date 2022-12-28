@@ -121,7 +121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: clothingImages.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: requirementForClothesRack
@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: clothingImages.Array.data[1]
       value: 
       objectReference: {fileID: 5541213826718118162, guid: 193e8afd0a77ae74fa242f14268c35a6, type: 3}
+    - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
+      propertyPath: clothingImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 5541213826718118162, guid: 861ff12cfc2c79a4fa3e576cfd0bbca2, type: 3}
     - target: {fileID: 2828272737889606113, guid: 719479245823a734091fbae9f81f1e7e, type: 3}
       propertyPath: clothingColors.Array.data[0].color.b
       value: 1

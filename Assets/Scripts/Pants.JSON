@@ -22,6 +22,12 @@
             "type":"Skirt",
             "color":"Black",
             "price":25.00
+        },
+        {
+            "name":"Gray Pencil Skirt",
+            "type":"PencilSkirt",
+            "color":"Gray",
+            "price":40.00
         }
     ]
 }

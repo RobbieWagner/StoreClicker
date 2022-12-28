@@ -23,6 +23,18 @@
             "type":"Boots",
             "color":"Black",
             "price":60.00
+        },
+        {
+            "name": "Black Heels",
+            "type":"Heels",
+            "color":"Black",
+            "price":75.00
+        },
+        {
+            "name": "Brown Cowboy Boots",
+            "type":"CowboyBoots",
+            "color":"Brown",
+            "price":60.00
         }
     ]
 }

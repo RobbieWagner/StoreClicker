@@ -33,6 +33,18 @@
             "type":"LongSleeveShirt",
             "color":"White",
             "price":15.00
+        },
+        {
+            "name":"Red Flannel",
+            "type":"Flannel",
+            "color":"Red",
+            "price":17.50
+        },
+        {
+            "name":"Gray Suit",
+            "type":"SuitShirt",
+            "color":"Gray",
+            "price":30.00
         }
     ]
 }

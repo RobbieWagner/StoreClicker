@@ -25,6 +25,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingImages.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
@@ -39,6 +43,14 @@ PrefabInstance:
       propertyPath: clothingImages.Array.data[1]
       value: 
       objectReference: {fileID: 3155681474758821634, guid: 9989b53fe8d5c894eba0a4d654cfe8d4, type: 3}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 3155681474758821634, guid: eddc56fb41a24dd46b8b3bb3d5fcf8f8, type: 3}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingImages.Array.data[3]
+      value: 
+      objectReference: {fileID: 3155681474758821634, guid: c15399fe7289ccb4c937b5dfdf2bca1a, type: 3}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.data[0].color.b
       value: 0
@@ -88,6 +100,38 @@ PrefabInstance:
       value: 0.05882353
       objectReference: {fileID: 0}
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[4].color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[4].color.b
+      value: 0.14291562
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[4].color.g
+      value: 0.20856161
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[4].color.r
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[5].color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[5].color.b
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[5].color.g
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[5].color.r
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.data[0].colorName
       value: Red
       objectReference: {fileID: 0}
@@ -102,6 +146,14 @@ PrefabInstance:
     - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: clothingColors.Array.data[3].colorName
       value: Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[4].colorName
+      value: Brown
+      objectReference: {fileID: 0}
+    - target: {fileID: 495107011494401003, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
+      propertyPath: clothingColors.Array.data[5].colorName
+      value: Brown
       objectReference: {fileID: 0}
     - target: {fileID: 1011277541887391286, guid: fdbde4c2de49a6a4cadcd36c4a0de63d, type: 3}
       propertyPath: m_AnchorMax.y
